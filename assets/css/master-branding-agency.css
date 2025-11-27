@@ -3699,6 +3699,7 @@ h6 {
 .header-area.sticky button i {
   color: var(--primary);
 }
+
 .modal {
   z-index: 99999;
 }
@@ -4558,7 +4559,7 @@ section {
   animation-delay: 1s;
 }
 .container-preloader .loader-section {
-  background-color: var(--black);
+  background-color: #123b64;
   height: 100%;
   position: fixed;
   top: 0;
@@ -7887,7 +7888,7 @@ section {
   object-fit: cover;
 }
 
-/* --- MODIFICADO: Ajustes para alinear título a la derecha --- */
+/* --- : Ajustes para alinear título a la derecha --- */
 .hero-area .section-title {
   font-size: 180px; /* Este tamaño afectaba al texto, pero ahora usas imagen */
   line-height: 0.83;
@@ -7908,6 +7909,18 @@ section {
     right: 0;           /* ¡Esto lo pega al borde derecho absoluto! */
     z-index: 10;        /* Asegura que se vea encima de todo */
 }
+@media only screen and (max-width: 991px) {
+    .logo-borde-derecho {
+        position: relative; /* Ya no flota, entra en el flujo normal */
+        top: auto;
+        right: auto;
+        display: flex;
+        justify-content: center; /* Centrado horizontal */
+        width: 100%;
+        margin-bottom: 30px; /* Espacio debajo del logo */
+        margin-top: 100px;   /* Espacio arriba para que no choque con el menú */
+    }
+  }
 /* --- LÓGICA PARA SUBIR SOLO EN PC --- */
 
 /* 1. En Celulares y Tablets: Margen normal (No sube) */
@@ -9409,6 +9422,129 @@ section {
   margin: 0 30px;
   overflow: visible;
 }
+/* CONTENEDOR DE CARDS */
+.process-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+ 
+}
+
+/* CARD */
+.process-card-item {
+  width: 310px;
+  background: #08b4e0;
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+.process-card-item:hover {
+  transform: translateY(-5px);
+}
+
+/* ICONOS */
+.icon-box img {
+  width: 85px;
+  margin-bottom: 15px;
+}
+
+/* TITULO DE CARD */
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #003A70;
+  margin-bottom: 12px;
+}
+
+/* BOTÓN */
+.btn-conoce-mas {
+  background-color: #0072BC;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn-conoce-mas:hover {
+  background-color: #005a92;
+}
+
+/* INFO DESPLEGABLE */
+.info-desplegable {
+  display: none;
+  margin-top: 18px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.08);
+}
+.info-desplegable.activo {
+  max-height: 500px; /* Aumenta si tu contenido es más grande */
+}
+
+/* PDF ITEM */
+.pdf-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pdf-icon {
+  width: 28px;
+}
+
+.pdf-mini {
+  width: 22px;
+}
+
+/* TABLAS */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.custom-table th {
+  background: #0072BC;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.custom-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none;
+}
+
+
+
+/* MODO OSCURO */
+.dark .process-card-item {
+  background: #303030;
+  color: #fff;
+}
+
+.dark .info-desplegable {
+  background: #373737;
+}
+
+.dark .custom-table th {
+  background: #0090d8;
+}
+
+.dark .custom-table td {
+  border-bottom: 1px solid #555;
+}
 
 .process-box {
   /*border-inline-start: 1px solid #b7c5c1;*/
@@ -9494,6 +9630,7 @@ section {
     font-size: 20px;
   }
 }
+
 .testimonial-area {
   /*background-color: #ffc291;*/
   background-image: url(../imgs/shape/ftestimonios.jpg);
