@@ -7543,7 +7543,7 @@ section {
   
 }
 .header-area.sticky {
-  background-color: #7605e4;
+  background-color: #096fb7;
 }
 .header-area .header-area__inner {
   display: flex;
@@ -7612,7 +7612,7 @@ section {
   color: var(--white);
 }
 .footer-area {
-  background-color: var(--black);
+  background-color:#096fb7;
 }
 .footer-area-inner {
   display: grid;
@@ -7669,7 +7669,7 @@ section {
   content: "";
   width: 1px;
   height: calc(100% + 400px);
-  background-color: #202020;
+  /*background-color: #202020;*/
   top: -200px;
   inset-inline-end: 0;
 }
@@ -7722,7 +7722,7 @@ section {
 .footer-area .footer-nav-list li {
   font-size: 18px;
   line-height: 30px;
-  color: var(--white-2);
+  color: var(--white);
 }
 .footer-area .footer-nav-list li a:hover {
   color: var(--white);
@@ -7740,7 +7740,7 @@ section {
   line-height: 1;
 }
 .footer-area .social-links li a {
-  color: var(--white-2);
+  color: var(--white);
 }
 .footer-area .social-links li a:hover {
   color: var(--white);
@@ -7811,7 +7811,7 @@ section {
   font-weight: 500;
 }
 .copyright-area {
-  border-top: 1px solid #202020;
+  border-top: 1px solid white;
 }
 .copyright-area-inner {
   padding: 32px 0;
@@ -7825,7 +7825,7 @@ section {
 .copyright-area .copyright-text .text {
   text-align: center;
   font-weight: 500;
-  color: var(--white-2);
+  color: var(--white);
 }
 .copyright-area .copyright-text .text a {
   color: var(--white);
@@ -8140,71 +8140,76 @@ section {
   }
 }
 .about-area .section-content .wc-btn-primary {
-  background-color: var(--black);
+  background-color: #123B64;
   color: var(--white);
 }
 .about-area .section-content .wc-btn-circle {
-  background-color: var(--black);
+  background-color: #123B64;
   color: var(--white);
 }
+
+/* --- ESTILOS GALERÍA DE FOTOS --- */
+
 .work-area {
   background-color: var(--white);
 }
 .dark .work-area {
   background-color: var(--black);
 }
+
 .work-area .section-title {
-  max-width: 300px;
+  /* max-width: 300px;  */
 }
 
+
 .work-area .section-header {
-  display: grid;
-  gap: 30px 40px;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid;      
+  /* grid-template...    
+  
+  /* Centrado total */
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%;
 }
+
+/* Eliminamos media  */
 @media only screen and (max-width: 767px) {
   .work-area .section-header {
-    display: flex;
+    /* Mantener flex para móviles */
+    display: flex; 
     flex-direction: column;
     align-items: center;
   }
 }
-.work-area .section-header .link-meta {
-  display: flex;
-  gap: 10px 40px;
+
+/* ---  Estilo Botón Naranja --- */
+.title-btn-orange {
+    background-color: #F7941D; /* Naranja */
+    color: #ffffff !important;
+    display: inline-block;
+    padding: 12px 60px; /* Más padding a los lados para que se vea ancho */
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 40px; /* Letra grande */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-transform: none;
+    margin: 0 auto;
 }
-.work-area .profile-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+
+/* Ajuste del botón para celulares */
+@media only screen and (max-width: 767px) {
+    .title-btn-orange {
+        font-size: 28px;
+        padding: 10px 30px;
+        width: 90%; /* En celular que ocupe casi todo el ancho */
+    }
 }
-.work-area .profile-item .icon {
-  border: 1px solid var(--border);
-  width: 40px;
-  height: 40px;
-  color: var(--primary);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-}
-.work-area .profile-item .meta-title {
-  font-size: 10px;
-  text-transform: uppercase;
-  line-height: 1;
-  display: inline-block;
-  font-family: var(--font_instumentsans);
-  font-weight: 500;
-  color: #999;
-}
-.work-area .profile-item .name {
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 500;
-  margin-top: 5px;
-}
+
+/* --- Resto de estilos de la galería (Mantenidos) --- */
 .work-area .works-wrapper-box {
   margin-top: 60px;
 }
@@ -8213,6 +8218,7 @@ section {
     margin-top: 40px;
   }
 }
+
 .work-area .works-wrapper {
   display: grid;
   gap: 10px 10px;
@@ -8228,37 +8234,62 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.work-area .section-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px 30px;
-  justify-content: flex-end;
+
+.work-box:hover .thumb:before {
+  top: -2px;
 }
-@media only screen and (max-width: 991px) {
-  .work-area .section-content {
-    grid-template-columns: 1fr;
-  }
+.work-box:hover .thumb::after {
+  bottom: -2px;
 }
-.work-area .section-content .text {
-  font-size: 24px;
-  line-height: 1.33;
-  max-width: 520px;
-  font-family: var(--font_instrumentsans);
-  margin-top: -11px;
+.work-box:hover .thumb img {
+  transform: scale(1.1);
 }
-@media only screen and (max-width: 1199px) {
-  .work-area .section-content .text {
-    font-size: 20px;
-    margin-top: -9px;
-  }
+.work-box .thumb {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
-.work-area .section-content .btn-wrapper {
-  margin-top: 43px;
+.work-box .thumb:before {
+  position: absolute;
+  content: url(../imgs/shape/img-s-95.webp);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -60px;
+  transition: all 0.5s;
 }
-@media only screen and (max-width: 1199px) {
-  .work-area .section-content .btn-wrapper {
-    margin-top: 33px;
-  }
+.dark .work-box .thumb:before {
+  content: url(../imgs/shape/img-s-95-dark.webp);
+}
+.work-box .thumb::after {
+  position: absolute;
+  content: url(../imgs/shape/img-s-94.webp);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+  transition: all 0.5s;
+}
+.dark .work-box .thumb::after {
+  content: url(../imgs/shape/img-s-94-dark.webp);
+}
+.work-box .thumb img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+
+
+/* --- RESPONSIVE (Móviles) --- */
+@media only screen and (max-width: 767px) {
+    .title-btn-orange {
+        font-size: 24px;
+        padding: 10px 25px;
+    }
+    
+    .gallery-text {
+        font-size: 16px;
+    }
 }
 .work-box:hover .thumb:before {
   top: -2px;
@@ -8525,6 +8556,11 @@ section {
   padding: 47px 37px 46px;
   border-radius: 20px;
   transition: all 0.5s;
+  text-align: center;      /* Centra textos e imágenes inline */
+  display: flex;           /* Activa Flexbox */
+  flex-direction: column;  /* Ordena elementos verticalmente */
+  align-items: center;     /* Centra los elementos (como el ícono) horizontalmente */
+  height: 100%;
 }
 
 /* --- NUEVOS ESTILOS AÑADIDOS PARA EL TÍTULO Y SUBTÍTULO --- */
@@ -8605,6 +8641,8 @@ section {
   line-height: 1.2;
   color: var(--white);
   margin-top: 30px;
+  text-align: center;
+    width: 100%;
 }
 @media only screen and (max-width: 1919px) {
   .service-box .title {
@@ -8625,6 +8663,7 @@ section {
 .service-box .text {
   color: var(--white-2);
   margin-top: 23px;
+  text-align: center;
 }
 @media only screen and (max-width: 1199px) {
   .service-box .text {
@@ -8920,6 +8959,7 @@ section {
 }
 .blog-area {
   background-color: var(--white);
+  background-image: url(../imgs/shape/borde.gif);
 }
 .dark .blog-area {
   background-color: var(--black);
@@ -8970,6 +9010,124 @@ section {
     gap: 45px 30px;
   }
 }
+
+/* 1. Ajuste del Grid para esta sección */
+/* Sobreescribimos las columnas por defecto para que sean 2 (Imagen 45% - Texto 55%) */
+.blog-area .profile-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr; /* La columna de texto es un poco más ancha */
+    gap: 50px;
+    align-items: center; /* Centrado vertical */
+}
+
+
+/* 2. Imagen Izquierda */
+.profile-image-wrap {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Sombra elegante */
+    height: 100%;
+}
+
+.profile-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 450px; /* Altura mínima para que se vea imponente */
+    transition: transform 0.5s ease;
+}
+
+.profile-image-wrap:hover img {
+    transform: scale(1.03); /* Efecto zoom suave */
+}
+
+/* 3. Tarjeta Derecha (Gris Clara) */
+.profile-card {
+    background-color: #F0F2F5; /* Gris claro moderno */
+    padding: 50px;
+    border-radius: 25px;
+    position: relative;
+    /* Borde verde sutil a la izquierda (opcional, estilo decorativo) */
+    border-left: 5px solid #28a745; 
+}
+
+/* 4. Título Botón Verde */
+.profile-header-center {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-title-btn {
+    background-color: #28a745; /* Verde Osiptel */
+    color: #ffffff !important;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3); /* Sombra verde suave */
+}
+
+/* 5. Lista con Puntos Verdes */
+.profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #003366; /* Azul oscuro para el texto */
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* El punto verde personalizado */
+.profile-list li::before {
+    content: '●'; /* Círculo relleno */
+    color: #28a745;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* --- RESPONSIVE (MÓVILES) --- */
+@media only screen and (max-width: 991px) {
+    /* Pasa a 1 columna */
+    .blog-area .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .blog-area .profile-grid > div:nth-child(2) {
+        order: 1; /* ¡Tú vas primero! */
+    }
+    .blog-area .profile-grid > div:nth-child(1) {
+        order: 2; /* ¡Tú vas segundo! */
+    }
+    
+
+    /* Ajustes de la tarjeta en móvil */
+    .profile-card {
+        padding: 30px 20px;
+    }
+
+    .profile-title-btn {
+        font-size: 24px;
+        padding: 10px 30px;
+        width: 100%; /* En móvil que ocupe el ancho para verse bien */
+    }
+
+    /* Ajuste de imagen en móvil */
+    .profile-image-wrap img {
+        min-height: 300px;
+    }
+}
+
 .blog:hover .thumb:before {
   top: -2px;
 }
@@ -9080,6 +9238,9 @@ section {
   gap: 5px;
   margin-top: 17px;
 }
+
+
+
 .cta-area {
   background-color: #d8e9e4;
 }
@@ -9158,6 +9319,7 @@ section {
     margin-top: 20px;
   }
 }
+
 .process-area {
   background-color: #efefef;
 }
@@ -9231,6 +9393,7 @@ section {
   margin: 0 30px;
   overflow: visible;
 }
+
 .process-box {
   /*border-inline-start: 1px solid #b7c5c1;*/
 }
@@ -9595,7 +9758,7 @@ section {
 .white-text{
   color: #fff !important;;
 }
-
+/*Colores de las cartas */
 .bg-cyan{
   /*background-color: #00B0E1;*/
   background-color: #7605E4
