@@ -8207,7 +8207,7 @@ section {
 /* Ajuste específico para pantallas muy pequeñas */
 @media only screen and (max-width: 375px) {
   .hero-content-wrapper .hero-bg-image {
-    width: 150px;
+    width: -50px;
   }
   
   .osiptel-logo {
