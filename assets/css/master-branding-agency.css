@@ -8926,7 +8926,7 @@ section {
 .suma-area {
   background-color: #f4f4f4;
   /* Corregí la sintaxis de la url que tenía doble punto y coma */
-  background-image: url(../imgs/shape/fondo.gif); 
+ /* background-image: url(../imgs/shape/fondo.gif); */
 }
 
 .dark .suma-area {
@@ -9010,7 +9010,7 @@ section {
 }
 .blog-area {
   background-color: var(--white);
-  background-image: url(../imgs/shape/borde.gif);
+  /*background-image: url(../imgs/shape/borde.gif);*/
 }
 .dark .blog-area {
   background-color: var(--black);
