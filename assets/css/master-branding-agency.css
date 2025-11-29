@@ -4531,6 +4531,7 @@ h6 {
 
 /* ----- MENÚ MÓVIL ------- */
 .mobile-menu {
+  
   background: #46A9E0;
   width: auto;
   right: 0;
@@ -5517,7 +5518,7 @@ section {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 900;
+  z-index: 99999;
 }
 
 .container-preloader .animation-preloader {
@@ -9143,6 +9144,9 @@ section {
   .header-area .header__meta {
     display: none;
   }
+  .header__nav { 
+        display: none !important; 
+    }
 }
 
 .dir-rtl .header-area .header__navicon img {
@@ -10956,18 +10960,12 @@ section {
   gap: 50px;
   grid-template-columns: 1fr 1fr;
 
-  /* CAMBIO IMPORTANTE 1: */
-  /* Cambié 'center' por 'start'. Esto alinea todo hacia ARRIBA en lugar del centro */
-  align-items: start;
+  
 }
 
-/* Estilos del Contenido (Izquierda) */
 .suma-area .suma-content {
   padding: 20px;
   text-align: center;
-
-  /* CAMBIO IMPORTANTE 2: Margen negativo para subirlo más */
-  /* Aumenta este número (ej. -80px) si quieres que suba más */
   margin-top: -20px;
 }
 
