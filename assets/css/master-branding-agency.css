@@ -4531,6 +4531,7 @@ h6 {
 
 /* ----- MENÚ MÓVIL ------- */
 .mobile-menu {
+  
   background: #46A9E0;
   width: auto;
   right: 0;
@@ -9143,6 +9144,9 @@ section {
   .header-area .header__meta {
     display: none;
   }
+  .header__nav { 
+        display: none !important; 
+    }
 }
 
 .dir-rtl .header-area .header__navicon img {
