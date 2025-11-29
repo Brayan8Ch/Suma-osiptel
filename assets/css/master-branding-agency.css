@@ -9808,6 +9808,29 @@ section {
 .process-card-item:hover {
   transform: translateY(-5px);
 }
+.process-card-item:nth-child(1) {
+  background: #F18624;  /* naranja */
+}
+
+.process-card-item:nth-child(2) {
+  background: #46A9E0;  /* celeste */
+}
+
+.process-card-item:nth-child(3) {
+  background: #41B272;  /* verde */
+}
+.process-card-item:nth-child(1) .btn-conoce-mas {
+  color: #F18624;
+}
+
+.process-card-item:nth-child(2) .btn-conoce-mas {
+  color: #46A9E0;
+}
+
+.process-card-item:nth-child(3) .btn-conoce-mas {
+  color: #41B272;
+}
+
 
 /* ICONOS */
 .icon-box img {
@@ -9825,9 +9848,9 @@ section {
 
 /* BOTÓN */
 .btn-conoce-mas {
-  background-color: #0072BC;
+  background-color: #fff;
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
   border: none;
   padding: 8px 18px;
   border-radius: 10px;
@@ -9835,8 +9858,19 @@ section {
   margin-top: 10px;
   transition: 0.3s;
 }
-.btn-conoce-mas:hover {
-  background-color: #005a92;
+.process-card-item:nth-child(1) .btn-conoce-mas:hover {
+  background-color: #ffb74d;
+  color: #fff;
+}
+
+.process-card-item:nth-child(2) .btn-conoce-mas:hover {
+  background-color: #08b4e0;
+  color: #fff;
+}
+
+.process-card-item:nth-child(3) .btn-conoce-mas:hover {
+  background-color: #81c784;
+  color: #fff;
 }
 
 .info-desplegable {
