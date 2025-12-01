@@ -10438,7 +10438,7 @@ section {
 
 .service-area {
   /*background-color: var(--black);*/
-  background-image: url(../imgs/shape/ftestimonios.jpg);
+  background-image: url(../imgs/shape/FONDO-CELESTE.png);
 }
 
 .service-area .section-title {
@@ -10947,9 +10947,8 @@ section {
 /*suma area
 /* --- ESTILOS SECCIÓN SUMA --- */
 .suma-area {
-  background-color: #f4f4f4;
-  /* Corregí la sintaxis de la url que tenía doble punto y coma */
-  /* background-image: url(../imgs/shape/fondo.gif); */
+  /*background-color: #fff;*/
+   background-image: url(../imgs/shape/FONDO-GRIS.png); 
 }
 
 .dark .suma-area {
@@ -10966,22 +10965,30 @@ section {
   display: grid;
   gap: 50px;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 
   
 }
 
 .suma-area .suma-content {
-  padding: 20px;
+  background-color: #ff8c00;
+  color: #ffffff; 
+  padding: 40px; 
+  border-radius: 20px; 
   text-align: center;
-  margin-top: -20px;
+  
 }
 
-/* Estilos de la Imagen (Derecha) */
+
+.suma-area .suma-content .text-wrapper p {
+  color: #ffffff !important; 
+}
+
 .suma-area .suma-image .thumb {
   border-radius: 20px;
   overflow: hidden;
   height: 100%;
-  min-height: 400px;
+  min-height: 100%;
 }
 
 .suma-area .suma-image img {
@@ -11115,7 +11122,6 @@ section {
   height: 100%;
   object-fit: cover;
   min-height: 450px;
-  /* Altura mínima para que se vea imponente */
   transition: transform 0.5s ease;
 }
 
@@ -11126,12 +11132,11 @@ section {
 
 /* 3. Tarjeta Derecha (Gris Clara) */
 .profile-card {
-  background-color: #f1f5f0;
+  background-color: #28a745;
   /* Gris claro moderno */
   padding: 50px;
   border-radius: 25px;
   position: relative;
-  /* Borde verde sutil a la izquierda  */
   /* border-left: 5px solid #28a745; */
 }
 
@@ -11142,16 +11147,16 @@ section {
 }
 
 .profile-title-btn {
-  background-color: #28a745;
+  background-color: #fff;
   /* Verde Osiptel */
-  color: #ffffff !important;
+  color: #28a745 !important;
   display: inline-block;
   padding: 12px 40px;
   border-radius: 12px;
   font-weight: 800;
   font-size: 32px;
   margin: 0;
-  box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
+  /*box-shadow: 0 6px 15px rgba(241, 241, 241, 0.605);*/
   /* Sombra verde suave */
 }
 
@@ -11167,16 +11172,16 @@ section {
   padding-left: 30px;
   margin-bottom: 20px;
   font-size: 20px;
-  color: #003366;
+  color: #fff;
   /* Azul oscuro para el texto */
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
 }
 
 /* El punto verde personalizado */
 .profile-list li::before {
   content: '●';
-  color: #28a745;
+  color: #fff;
   font-size: 24px;
   position: absolute;
   left: 0;
@@ -11449,8 +11454,8 @@ section {
 }
 
 .process-area {
-  background-color: #efefef;
- /* background-image: url(../imgs/shape/);**/
+ /* background-color: #efefef;*/
+  background-image: url(../imgs/shape/FONDO-GRIS.png);
 
 }
 
@@ -11662,7 +11667,7 @@ section {
 }
 
 .pdf-mini {
-  width: 50px;
+  width: 30px;
 }
 
 /* TABLAS */
@@ -12137,24 +12142,24 @@ section {
   ;
 }
 
-/*Colores de las cartas */
+
 .bg-cyan {
-  /*background-color: #00B0E1;*/
+  
   background-color: #7605E4
 }
 
 .bg-purple {
-  /*background-color: #3D2281;*/
+ 
   background-color: #E8590D;
 }
 
 .bg-orange {
-  /*background-color: #EF7E22;*/
+  
   background-color: #6b605d;
 }
 
 .bg-blue {
-  /*background-color: #0158A7;*/
+
   background-color: #FF7F00;
 }
 
@@ -12494,6 +12499,7 @@ section {
   font-size: 24px;
   margin-bottom: 9px;
   padding: 7px 12px 7px 12px;
+
 }
 
 .styled-card .text {
