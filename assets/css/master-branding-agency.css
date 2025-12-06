@@ -9572,6 +9572,7 @@ section {
 /* Logos e Imágenes */
 .hero-logo {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .osiptel-logo {
@@ -9757,6 +9758,7 @@ section {
     /* Ajusta la imagen completa al espacio */
     background-repeat: no-repeat;
     background-position: -30px; 
+    
   }
   .hero-content-wrapper {
     min-height: 80vh;
@@ -10438,7 +10440,10 @@ section {
 
 .service-area {
   /*background-color: var(--black);*/
-  background-image: url(../imgs/shape/ftestimonios.jpg);
+  background-image: url(../imgs/shape/FONDO_CELESTE2.png);
+       background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 .service-area .section-title {
@@ -10948,7 +10953,10 @@ section {
 /* --- ESTILOS SECCIÓN SUMA --- */
 .suma-area {
   /*background-color: #fff;*/
-   background-image: url(../imgs/shape/FONDO-GRIS.png); 
+   background-image: url(../imgs/shape/FONDO_BLANCO.png); 
+    background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 .dark .suma-area {
@@ -11013,12 +11021,9 @@ section {
     gap: 40px;
     justify-items: center;
   }
-
+  
   .suma-area .suma-content {
     order: 1;
-
-    /* CAMBIO RESPONSIVE: */
-  
     margin-top: 0;
   }
 
@@ -11032,10 +11037,38 @@ section {
     min-height: 300px;
   }
 }
+/* --- SOLO PARA MÓVILES (menos de 767px) --- */
+/*@media only screen and (max-width: 767px) {
+  
+  .suma-area {
+    background-size: 100% auto; 
+    background-position: top center;
+  }
+  .suma-area .suma-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
 
+  .suma-area .suma-content {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 20px; 
+  }
+
+  .suma-area .suma-image img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+*/
 .blog-area {
   background-color: var(--white);
-  /*background-image: url(../imgs/shape/FONDO GRIS.png);*/
+  /*background-image: url(../imgs/shape/FONDO_BLANCO.png);*/
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 .dark .blog-area {
@@ -11455,7 +11488,10 @@ section {
 
 .process-area {
  /* background-color: #efefef;*/
-  background-image: url(../imgs/shape/FONDO-GRIS.png);
+  background-image: url(../imgs/shape/FONDO_CELESTE2.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
 
 }
 
